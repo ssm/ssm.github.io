@@ -3,9 +3,6 @@ layout: post
 title: Test post one
 ---
 
-{{ page.title }}
-================
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 pharetra orci nisi, egestas tristique velit faucibus nec. Donec sit
 amet bibendum lectus. Vestibulum ante ipsum primis in faucibus orci

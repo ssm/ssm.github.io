@@ -3,9 +3,6 @@ layout: post
 title: Test post two
 ---
 
-{{ page.title }}
-================
-
 Maecenas pulvinar lorem vel purus pharetra tempor. Pellentesque a
 dignissim sem. Aenean cursus pretium neque nec venenatis. Suspendisse
 ullamcorper quam a nisl vehicula, at vestibulum mi semper. Proin eu
