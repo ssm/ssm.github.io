@@ -43,28 +43,10 @@ title: Front page
 </div>
 
 <div class="row">
+  {% for post in site.posts limit:6 %}
   <div class="col-md-3">
-    <h3>Foo!</h3>
-    <p>
-      foo, foo, foo, foo, foo, foo, foo, foo, foo, foo, foo, foo,
-      foo, foo, foo, foo, foo, foo, foo, foo, foo, foo, foo, foo, foo,
-      foo, foo, foo, foo, foo, foo, foo, foo, foo, foo!
-    </p>
-  </div>
-  <div class="col-md-3">
-    <h3>Bar!</h3>
-    <p>
-      bar, bar, bar, bar, bar, bar, bar, bar, bar, bar, bar, bar,
-      bar, bar, bar, bar, bar, bar, bar, bar, bar, bar, bar, bar, bar,
-      bar, bar, bar, bar, bar, bar, bar, bar, bar, bar!
-    </p>
-  </div>
-  <div class="col-md-3">
-    <h3>Zoo!</h3>
-    <p>
-      zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo,
-      zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo,
-      zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo, zoo!
-    </p>
+    <h2><a href="{{ post.url}}">{{ post.title }}</a></h2>
+    <p>({{ post.date | date_to_string }})</p>
+    <p>{{ post.excerpt }}</p>
   </div>
 </div>
